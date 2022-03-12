@@ -63,10 +63,10 @@ input,button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#task-submit:hover{
+#task-submit:hover,.task-input-1 > .action > .delete:hover,.task-input-1 > .action > .edit:hover{
     opacity: 0.8;
 }
-#task-submit:active{
+#task-submit:active,.task-input-1 > .action > .delete:active,.task-input-1 > .action > .delete:active{
     opacity: 0.5;
 }
 #task{
@@ -84,12 +84,20 @@ div.task-input-1{
     display: flex;
     border-radius: 1rem;
     justify-content: space-between  ;
-    flex: 1 1 2%;
+    flex: 1 1 1%;
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 1rem 0rem;
     background-color:var(--darkest);
     /* padding: 2rem; */
 }
-.task-input-1 .action .delete{
+.task-input-1 > .action > .delete{
     color: crimson;
+}
+.task-input-1 > .action > .edit{
+    color: var(--pink);
+    font-weight: 550;
+    background-image: linear-gradient(to right,var(--pink),var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 }
